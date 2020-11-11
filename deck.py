@@ -7,7 +7,7 @@ def createDeck(suits, numbers):
             deck.append(number+suit)
     return deck 
 
-def shuffleDeck(list):
+def shuffle(list):
     for ix in range(len(list)):
         new_position = random.randrange(len(list))
         #Swapping items (cards) with empty glass technique.
