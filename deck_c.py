@@ -9,8 +9,28 @@ class Deck():
     def shuffle(self):
         deck.shuffle(self.deck)
 
+    def givecards(self, player_num, card_num):
+        players = []
+        for i in range(player_num):
+            players.append([])
+
+        for card in range(card_num):
+            for player in range(player_num):
+                players[player].append(self.deck.pop(0))
+
+        return players
+     
+
 '''
-How to create the desk:
+            podríamos hacer:
+            for player in range(player_num):
+                card = self.deck.pop()
+                players[player].append(card)
+'''
+
+
+'''
+How to create the deck:
     deck = []       
         for suit in suits:
             for number in numbers:
@@ -35,6 +55,3 @@ How to shuffle the deck can also be done either way:
             list[new_position] = list[ix]
             list[ix] = aux
 '''
-
-
-

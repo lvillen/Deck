@@ -7,3 +7,5 @@ deck1 = deck_c.Deck(suits, numbers)
 print("This is your ordered deck: {}.".format(deck1.deck))
 deck1.shuffle()
 print("Now, for something completely different: {}".format(deck1.deck))
+
+print(deck1.givecards(3, 5))
